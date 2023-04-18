@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    .heading {
+        color: white;
+        text-align: center;
+        font-size: 100px;
+        position: sticky;
+
+    }
+
+    .navigation {
+        text-decoration: none;
+        /* background-color: rgb(51, 54, 54); */
+        color: white;
+        text-align: center;
+        font-size: x-large;
+    }
+
+    #link {
+        text-decoration: none;
+        color: white;
+        padding-left: 80px;
+        padding-right: 80px;
+        text-align: center;
+        position: sticky;
+    }
+
+    #link:hover {
+        text-decoration: none;
+        color: white;
+        background-color: aqua;
+        transition: 0.2s;
+        box-shadow: 0px 0px 15px white;
+    }
+
+    .inside {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: larger;
+        font-size: xx-large;
+    }
+
+    .introduction {
+        border: solid black 0px;
+        border-radius: 25px;
+        transition: 0.2s;
+        background-image: url("/Air Pollution 101.jpg");
+        background-size: cover;
+    }
+
+    .introduction:hover {
+        background-image:linear-gradient(rgba(0, 0, 0, 0.3),
+                       rgba(0, 0, 0, 0.3)), url("/Air Pollution 101.jpg");
+        border: solid aqua 2px;
+        box-shadow: 0px 0px 15px white;
+        border-radius: 25px;
+        transition: 0.2s;
+        text-shadow: 0px 0px 20px white;
+    }
+
+    .inside {
+        padding: 150px;
+    }
+
+    .inside1 {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .quote {
+        text-align: center;
+        color: aqua;
+        font-size: 50px;
+    }
+
+    .Waterusage {
+        background-image: url("/waterusage.jpg");
+        background-size: cover;
+        border-radius: 25px;
+        transition: 0.3s;
+    }
+
+    .Waterusage:hover {
+        background-image:linear-gradient(rgba(0, 0, 0, 0.3),
+                       rgba(0, 0, 0, 0.3)), url("/waterusage.jpg");
+        background-size: cover;
+        border-radius: 25px;
+        transition: 0.3s;
+        border: solid white 1px;
+        box-shadow: 0px 0px 15px white;
+        text-shadow: 0px 0px 20px white;
+    }
+
+    .heading1 {
+        text-align: center;
+        font-size: 50px;
+        color: white;
+        text-decoration: solid;
+        font-weight: 600;
+
+    }
+
+    .inside2 {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        padding: 60px;
+
+    }
+
+    .watersource {
+        background-image: url("/water\ sources.jpg");
+        background-size: cover;
+        border-radius: 25px;
+        transition: 0.3s
+    }
+
+    .watersource:hover {
+
+        background-image:linear-gradient(rgba(0, 0, 0, 0.3),
+                       rgba(0, 0, 0, 0.3)), url("/water\ sources.jpg");
+        background-size: cover;
+        border-radius: 25px;
+        transition: 0.3s;
+        box-shadow: 0px 0px 15px white;
+        border: solid 1px white;
+        text-shadow: 0px 0px 20px white;
+
+
+    }
+
+    .heading2 {
+        text-align: center;
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+        text-decoration: solid;
+        font-weight: 600;
+    }
+
+    .inside3 {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        padding: 60px;
+    }
+
+    .cards {
+        overflow: auto;
+    }
+
+    .gw {
+        background-image: url("/glacr.jpg");
+        background-size: cover;
+        border: solid 0px black;
+        height: 900px;
+        width: 350px;
+        float: left;
+        transition: 0.3s;
+    }
+
+    .gw:hover {
+        background-image:linear-gradient(rgba(0, 0, 0, 0.3),
+                       rgba(0, 0, 0, 0.3)), url("/glacr.jpg");
+        background-size: cover;
+        border: solid 1px rgb(255, 255, 255);
+        box-shadow: 0px 0px 15px white;
+        height: 900px;
+        width: 350px;
+        float: left;
+        transition: 0.3s;
+        text-shadow: 0px 0px 20px white;
+    }
+
+    .Gw {
+        background-image: url("/gw.jpg");
+        background-size: cover;
+        border: solid 0px black;
+        height: 900px;
+        width: 350px;
+        float: left;
+        margin-left: 12%;
+        padding-left: 10px;
+        transition: 0.3s;
+
+    }
+
+    .Gw:hover {
+        background-image:linear-gradient(rgba(0, 0, 0, 0.3),
+                       rgba(0, 0, 0, 0.3)), url("/gw.jpg");
+        background-size: cover;
+        border: solid 0px black;
+        height: 900px;
+        width: 350px;
+        float: left;
+        margin-left: 12%;
+        padding-left: 10px;
+        border: solid 1px rgb(255, 255, 255);
+        box-shadow: 0px 0px 15px white;
+        transition: 0.3s;
+        text-shadow: 0px 0px 20px white;
+
+    }
+
+    .SW {
+        background-image: url("/sw.jpg");
+        background-size: cover;
+        border: solid 0px black;
+        height: 900px;
+        width: 350px;
+        float: right;
+        transition: 0.3s;
+    }
+
+    .SW:hover {
+        background-image:linear-gradient(rgba(0, 0, 0, 0.3),
+                       rgba(0, 0, 0, 0.3)), url("/sw.jpg");
+        background-size: cover;
+        border: solid 0px black;
+        height: 900px;
+        width: 350px;
+        float: right;
+        border: solid 1px rgb(255, 255, 255);
+        box-shadow: 0px 0px 15px white;
+        transition: 0.3s;
+        text-shadow: 0px 0px 20px white;
+
+    }
+
+    .WATERs {
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .heading3 {
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .inside4 {
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        /* padding: 1px; */
+    }
+
+    .inside5 {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 20px;
+        /* padding: 1px; */
+    }
+
+    .inside6 {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 20px;
+        /* padding: 1px; */
+    }
+
+    .waterm {
+        background-image: url("/mangement.jpg");
+        background-size: cover;
+        border-radius: 25px;
+        transition: 0.3s;
+    }
+
+    .waterm:hover {
+        background-image:linear-gradient(rgba(0, 0, 0, 0.3),
+                       rgba(0, 0, 0, 0.3)), url("/mangement.jpg");
+        background-size: cover;
+        border-radius: 25px;
+        border: solid 1px white;
+        box-shadow: 0px 0px 15px white;
+        transition: 0.3s;
+        text-shadow: 0px 0px 20px white;
+    }
+
+    .heading4 {
+        text-align: center;
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+        text-decoration: solid;
+        font-weight: 600;
+
+    }
+
+    .inside7 {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        padding: 60px;
+
+    }
+
+    .ws {
+        background-image: url("/ws.jpg");
+        background-size: cover;
+        border-radius: 25px;
+        transition: 0.3s;
+    }
+
+    .ws:hover {
+        background-image:linear-gradient(rgba(0, 0, 0, 0.3),
+                       rgba(0, 0, 0, 0.3)), url("/ws.jpg");
+        background-size: cover;
+        border-radius: 25px;
+        border: solid 1px white;
+        box-shadow: 0px 0px 15px white;
+        transition: 0.3s;
+        text-shadow: 0px 0px 20px white;
+    }
+
+    .heading5 {
+        text-align: center;
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+        text-decoration: solid;
+        font-weight: 600;
+    }
+
+    .inside8 {
+        color:white;
+        text-align: center;
+        font-size: 30px;
+        padding: 60px;
+        transition: 0.2s;
+
+    }
+
+    .inside8:hover {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        padding: 60px;
+        text-shadow: 0px 0px 20px white;
+        transition: 0.2s;
+
+    }
+</style>
+
+<body>
+    <div class="heading">Air Pollution</div>
+    <br>
+    <div class="navigation">
+        <a href="#" id="link">Home</a>
+        <a href="/abot us.html" id="link">About Me</a>
+        <a href="/more.html" id="link">More</a>
+        <a href="/objectives.html" id="link">Health Impacts</a>
+    </div>
+    <br><br><br>
+    <div class="introduction">
+        <div class="inside">
+            <p>Air pollution is a major environmental problem that affects people all around the world. It refers to the
+                presence of harmful substances in the air we breathe, which can have negative impacts on both human
+                health and the environment. Sources of air pollution include transportation, industrial activity,
+                agriculture, and natural phenomena such as dust storms and wildfires.
+
+                Air pollution can have a range of negative impacts on human health, including respiratory problems,
+                heart disease, and cancer. It can also damage the environment, including harming plants and wildlife,
+                acidifying bodies of water, and contributing to climate change.
+                Governments and organizations around the world are taking steps to address the issue of air pollution,
+                including implementing regulations on industrial emissions, promoting cleaner forms of transportation,
+                and encouraging the use of renewable energy sources. However, there is still much work to be done to
+                combat air pollution and protect human health and the environment.
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="quote">
+        <div class="inside1">
+            <p>
+                "To breathe clean, you have to go green"
+            </p>
+
+        </div>
+    </div>
+    <div class="Waterusage">
+        <div class="heading1">DELHI AIR POLLUTION</div>
+        <div><img src="" alt=""></div>
+        <div class="inside2">
+            <p>Delhi, the capital city of India, is one of the most polluted cities in the world, with air pollution
+                levels that regularly exceed the World Health Organization's (WHO) guidelines. The city's air quality is
+                affected by a range of factors, including transportation, industrial activity, construction, and the
+                burning of crop residue in neighboring states.
+
+                The problem of air pollution in Delhi is particularly acute during the winter months, when a combination
+                of weather patterns and increased use of heating fuels leads to a sharp increase in the levels of
+                particulate matter in the air. This can have serious health implications for people living in the city,
+                including increased risk of respiratory problems, heart disease, and stroke.
+
+                In recent years, the government of India and the Delhi state government have taken steps to address the
+                issue of air pollution in the city, including banning the use of diesel generators, restricting the use
+                of fireworks during festivals, and promoting the use of cleaner fuels such as compressed natural gas
+                (CNG) for public transport. However, more needs to be done to address the root causes of the problem,
+                including reducing emissions from vehicles and industries and finding alternative ways for farmers to
+                dispose of their crop residue, one of the main causes is the crop burning that takes place in the
+                neighboring states of Punjab and Haryana.</p>
+        </div>
+    </div>
+    <br><br>
+    <div class="watersource">
+        <div class="heading2">DELHI POLLUTION CAUSES</div>
+        <div><img src="" alt=""></div>
+        <div class="inside3">
+            <p>
+                During the winter months, farmers in these states burn the leftover straw from their rice crops in order
+                to clear their fields for the next planting season. This practice, known as stubble burning, releases
+                large amounts of smoke, ash, and other pollutants into the air, which then travel to Delhi and other
+                nearby cities. The resulting haze can be so thick that visibility is reduced, and people are advised to
+                stay indoors to avoid breathing in the toxic air. <br>
+                <br>
+                Stubble burning is not the only cause of air pollution in Delhi, however. Other factors include vehicle
+                emissions, industrial pollution, and construction dust. The city's geography also plays a role, as it is
+                surrounded by hills on three sides, which can trap pollutants and prevent them from dispersing.
+
+            </p>
+        </div>
+    </div>
+    <br><br>
+    <center>
+        <div class="WATERs">MAIN POLLUTION SOURCES</div>
+    </center>
+    <div class="cards">
+        <div class="gw">
+            <div class="heading3">PUNJAB</div>
+            <div><img src="" alt=""></div>
+            <div class="inside4">
+                <p>
+                    Punjab, a neighboring state of Delhi, is a major contributor to the air pollution problem in the
+                    city. The main reason for this is the practice of stubble burning, which is the burning of crop
+                    residue left over after the harvest.
+
+                    In Punjab, farmers typically grow paddy during the summer months, and after the harvest, they are
+                    left with a large amount of crop residue in their fields. Instead of disposing of this residue in a
+                    more environmentally friendly way, many farmers opt to burn it, as it is a quick and cheap way to
+                    clear the fields for the next crop. This practice leads to a significant increase in the amount of
+                    particulate matter in the air, which can cause serious health problems for people living in the
+                    area.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="Gw">
+            <div class="heading3">HARYANA</div>
+            <div><img src="" alt=""></div>
+            <div class="inside5">
+                <p>
+                    Haryana, another neighboring state of Delhi, is also a major contributor to the air pollution
+                    problem in the city. Similar to Punjab, the main reason for this is the practice of stubble burning.
+
+                    In Haryana, farmers also grow paddy during the summer months, and after the harvest, they are left
+                    with a large amount of crop residue in their fields. Many farmers choose to burn this residue as a
+                    quick and cheap way to clear the fields for the next crop. This practice leads to a significant
+                    increase in the amount of particulate matter in the air, which can cause serious health problems for
+                    people living in the area.
+                </p>
+            </div>
+        </div>
+
+        <div class="SW">
+            <div class="heading3">OTHER</div>
+            <div><img src="" alt=""></div>
+            <div class="inside6">
+                <p>
+                    In addition to stubble burning in neighboring states, there are several other factors that
+                    contribute to the air pollution problem in Delhi.The high number of vehicles on the roads in Delhi
+                    contributes to the air pollution
+                    problem, as emissions from cars, trucks, and other vehicles release harmful pollutants into the air.
+                    The industrial activity in and around Delhi, including factories and power
+                    plants, also contributes to the air pollution problem. Emissions from these sources can contain a
+                    range of pollutants, including particulate matter and sulfur dioxide.
+                    Construction activity in Delhi also contributes to the air pollution problem,
+                    as the dust and debris generated by construction sites can release particulate matter into the air.
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="waterm">
+        <div class="heading4">POLLUTION MANAGEMENT</div>
+        <div><img src="" alt=""></div>
+        <div class="inside7">
+            <p>
+                The management of air pollution in Delhi is a complex and multi-faceted issue that requires a concerted
+                effort from the government, individuals, and organizations to address. To effectively manage air
+                pollution in Delhi, a range of strategies can be implemented, including introducing and enforcing
+                regulations and policies, promoting sustainable transportation options, promoting the use of clean
+                energy sources, encouraging farmers in neighboring states to adopt sustainable farming practices, and
+                raising public awareness about the health impacts of air pollution. Additionally, monitoring air quality
+                levels and taking action when levels of pollutants exceed safe limits is crucial to reduce emissions and
+                improve air quality. By taking a comprehensive approach to air pollution management, it is possible to
+                improve the quality of life for those living in Delhi and promote sustainable and healthy communities.
+
+
+            </p>
+        </div>
+    </div>
+    <br><br>
+    <div class="ws">
+        <div class="heading5">CONCLUSION</div>
+        <div><img src="" alt=""></div>
+        <div class="inside8">
+            <p>
+                The issue of air pollution in Delhi is a major concern not just for the city but for the entire country.
+                It poses a significant threat to the health and well-being of the people living in the city, as well as
+                to the environment and the economy. While various measures have been taken to address the issue, it is
+                clear that more needs to be done. The root causes of the problem, such as stubble burning, vehicular
+                emissions, industrial activity, and waste management, must be tackled in a coordinated manner to ensure
+                lasting solutions.
+
+                However, addressing air pollution in Delhi is not just the responsibility of the government or
+                organizations, but also of individuals. Everyone can play a role in reducing their own carbon footprint
+                by adopting sustainable practices in their daily lives, such as using public transportation, conserving
+                energy, and properly disposing of waste. Education and awareness-raising efforts can also go a long way
+                in encouraging people to take action and make a positive impact on the environment.
+
+                Moreover, it is important to recognize that the issue of air pollution in Delhi is not unique to the
+                city, and similar challenges are being faced by other cities across the world. Therefore, sharing best
+                practices, knowledge, and resources with other cities can help in finding innovative solutions to this
+                problem. By collaborating with other stakeholders, including international organizations, academic
+                institutions, and civil society groups, we can work towards creating a sustainable future that
+                prioritizes the health and well-being of all.
+
+                In conclusion, the issue of air pollution in Delhi is a multifaceted one that requires a collective
+                effort from all stakeholders to find a lasting solution. Through a combination of government policies,
+                individual actions, and global collaboration, we can work towards creating a cleaner and healthier
+                environment for ourselves and future generations.
+
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
